@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
+    <script src="https://unpkg.com/aframe-troika-text/dist/aframe-troika-text.min.js"></script>
+  </head>
+  <body>
+    <a-scene
+      mindar-image="imageTargetSrc: https://cdn.glitch.global/ff977d41-d2ec-4a26-8e6f-ebccbaafe68a/cracha.mind?v=1747747091903;"
+      color-space="sRGB"
+      renderer="colorManagement: true, physicallyCorrectLights"
+      vr-mode-ui="enabled: false"
+      device-orientation-permission-ui="enabled: false"
+    >
+      <a-assets>
+        <img id="senac-logo" src="https://cdn.glitch.global/ff977d41-d2ec-4a26-8e6f-ebccbaafe68a/logo-devtec.png?v=1747749942068" />
+      </a-assets>
+
+      <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+
+      <a-entity mindar-image-target="targetIndex: 0">
+        <a-plane position="0 0 0" width="1" height="1" color="#0f0f0f" opacity="0.95"></a-plane>
+        <a-image src="#senac-logo" position="0 -0.85 0.01" width="0.5" height="0.32"></a-image>
+
+        <a-entity
+          troika-text="value: DevTEC 2025; font: https://fonts.gstatic.com/s/orbitron/v22/yMJRMIlzdpvBhQQL_Qq7dys.woff; align: center; color: #00FFD1; fontSize: 0.08; maxWidth: 1"
+          position="0 0.2 0.01"
+        ></a-entity>
+
+        <a-entity
+          troika-text="value: Foi uma alegria compartilhar com vocês.; font: https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxP.ttf; align: center; color: #FFFFFF; fontSize: 0.06; maxWidth: 0.6"
+          position="0 0.4 0.01"
+        ></a-entity>
+
+        <a-entity
+          troika-text="value: Que essas ideias inspirem seus próximos passos.; font: https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxP.ttf; align: center; color: #BBBBBB; fontSize: 0.05; maxWidth: 0.6"
+          position="0 0.15 0.01"
+        ></a-entity>
+
+        <a-entity
+          troika-text="value: Encontre meus contatos e esta apresentação em:; font: https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxP.ttf; align: center; color: #CCCCCC; fontSize: 0.045; maxWidth: 0.6"
+          position="0 -0.1 0.01"
+        ></a-entity>
+
+        <a-entity
+          troika-text="value: linktr.ee/phvcandido; font: https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxP.ttf; align: center; color: #00FFD1; fontSize: 0.06; maxWidth: 1"
+          position="0 -0.3 0.01"
+        ></a-entity>
+
+        <a-entity
+          troika-text="value: Tubarão - SC, Brasil; font: https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxP.ttf; align: center; color: #888888; fontSize: 0.045"
+          position="0 -0.55 0.01"
+        ></a-entity>
+
+      </a-entity>
+    </a-scene>
+  </body>
+</html>
